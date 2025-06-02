@@ -3,11 +3,11 @@
 
 // TODO: Realizar os testes com as classes Nokia e Iphone
    // Criando instâncias dos smartphones
-    Smartphone nokia = new Nokia ("1111-2222");
-    Smartphone iphone = new Iphone("3333-4444");
-
+    Smartphone nokia = new Nokia ("1111-2222", "22222", "modelo01", 62);
+    Smartphone iphone = new Iphone (numero:"3333-4444", imei: "3636", modelo: "Modelo002", memoria: 128 );
+ 
     // Testando funcionalidades
-    Console.WriteLine("Testando Nokia:");
+    Console.WriteLine($"Testando Nokia: ");
     nokia.Ligar();
     nokia.ReceberLigacao();
     nokia.InstalarAplicativo("WhatsApp");
