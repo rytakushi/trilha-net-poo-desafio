@@ -1,18 +1,17 @@
 ﻿using DesafioPOO.Models;
 
 
-// TODO: Realizar os testes com as classes Nokia e Iphone
    // Criando instâncias dos smartphones
-    Smartphone nokia = new Nokia ("1111-2222", "22222", "modelo01", 62);
-    Smartphone iphone = new Iphone (numero:"3333-4444", imei: "3636", modelo: "Modelo002", memoria: 128 );
+    Smartphone nokia = new Nokia ("1111-2222", "Nokia 3310","22222",  62);
+    Smartphone iphone = new Iphone (numero:"3333-4444", modelo: "iPhone 13",imei: "363636",  memoria: 128 );
  
     // Testando funcionalidades
-    Console.WriteLine($"Testando Nokia: ");
+    Console.WriteLine($"Testando Nokia: {nokia.Numero}");
     nokia.Ligar();
     nokia.ReceberLigacao();
     nokia.InstalarAplicativo("WhatsApp");
 
-    Console.WriteLine("\nTestando iPhone:");
+    Console.WriteLine($"\nTestando iPhone: {iphone.Numero}");
     iphone.Ligar();
     iphone.ReceberLigacao();
     iphone.InstalarAplicativo("Instagram");
